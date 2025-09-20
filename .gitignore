@@ -1,0 +1,37 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Virtual environments
+venv/
+ENV_SETUP/
+tfenv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and runs
+runs/
+predictions/
+*.log
+
+# Weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# Datasets (if you download or unzip inside project)
+datasets/
+data/
+*.zip
+*.tar.gz
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VSCode settings
+.vscode/

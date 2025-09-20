@@ -1,0 +1,20 @@
+# YOLO dataset configuration file
+
+# Paths to your dataset folders
+train: C:/Users/Raja/Downloads/hackathon2_train_1/train_1/train1
+val: C:/Users/Raja/Downloads/hackathon2_train_1/train_1/val1
+test: C:/Users/Raja/Downloads/Hackathon2_test1/test1  # Updated test dataset path
+
+# Number of classes
+nc: 7
+
+# Class names
+names: [
+  'OxygenTank',
+  'NitrogenTank',
+  'FirstAidBox',
+  'FireAlarm',
+  'SafetySwitchPanel',
+  'EmergencyPhone',
+  'FireExtinguisher'
+]
