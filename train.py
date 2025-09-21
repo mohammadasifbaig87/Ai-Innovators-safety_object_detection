@@ -4,7 +4,7 @@ from ultralytics import YOLO
 import os
 import sys
 
-EPOCHS = 10
+EPOCHS = 15
 MOSAIC = 0.4
 OPTIMIZER = 'AdamW'
 MOMENTUM = 0.9

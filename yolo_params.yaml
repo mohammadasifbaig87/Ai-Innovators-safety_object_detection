@@ -1,9 +1,9 @@
 # YOLO dataset configuration file
 
 # Paths to your dataset folders
-train: C:/Users/Raja/Downloads/hackathon2_train_1/train_1/train1
-val: C:/Users/Raja/Downloads/hackathon2_train_1/train_1/val1
-test: C:/Users/Raja/Downloads/Hackathon2_test1/test1  # Updated test dataset path
+train: C:/Users/mdafr/Downloads/hackathon2_train_1/train_1/val1/images
+val: C:/Users/mdafr/Downloads/hackathon2_train_1/train_1/val1/images
+test: C:/Users/mdafr/Downloads/Hackathon2_test1/test1/images
 
 # Number of classes
 nc: 7
