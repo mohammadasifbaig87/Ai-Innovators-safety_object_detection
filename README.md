@@ -1,7 +1,8 @@
 
+
 # 🚀 HackWithHyderabad - Safety Object Detection (YOLOv8)
 
-This repository contains our solution for the **HackWithHyderabad Hackathon – Duality AI’s Space Station Challenge: Safety Object Detection #2**.  
+This repository contains our solution for the **HackWithHyderabad Hackathon – Duality AI’s Space Station Challenge: Safety Object Detection #2**.
 We use **YOLOv8** for multi-class object detection, focused on identifying safety-critical objects in simulated space station environments.
 
 ---
@@ -9,9 +10,8 @@ We use **YOLOv8** for multi-class object detection, focused on identifying safet
 ## 📌 Project Structure
 
 ```
-
-HACKATHON2\_SCRIPTS/
-│── ENV\_SETUP/             # Virtual environment setup
+HACKATHON2_SCRIPTS/
+│── ENV_SETUP/             # Virtual environment setup
 │── predictions/           # Stores prediction outputs
 │── runs/                  # YOLO training logs and checkpoints
 │── tfenv/                 # TensorFlow environment files (if used)
@@ -19,35 +19,37 @@ HACKATHON2\_SCRIPTS/
 │── predict.py             # Script for inference
 │── train.py               # Script for training
 │── visualize.py           # Script for visualizing results
-│── yolo\_params.yaml       # YOLOv8 hyperparameter config
+│── yolo_params.yaml       # YOLOv8 hyperparameter config
 │── yolov8s.pt             # Pretrained YOLOv8 weights
 │── .gitignore             # Ignored files for git
+│── app.py                 # Streamlit app for predictions
 │── README.md              # Project documentation
-
-````
+```
 
 ---
 
 ## ⚡ Problem Statement
 
-Duality AI’s challenge:  
-Develop an **AI model for safety object detection** that can accurately classify multiple safety-critical objects in space station environments.  
+Duality AI’s challenge:
+Develop an **AI model for safety object detection** that can accurately classify multiple safety-critical objects in space station environments.
 
 Key Deliverables:
-- ✅ Trained object detection model
-- ✅ Performance report with metrics
-- ✅ Documentation & usage guide
-- ⚡ (Bonus) Novel use-case proposal
+
+* ✅ Trained object detection model
+* ✅ Performance report with metrics
+* ✅ Documentation & usage guide
+* ⚡ (Bonus) Novel use-case proposal
 
 ---
 
 ## 🛠️ Installation & Setup
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/your-username/HACKATHON2_SCRIPTS.git
    cd HACKATHON2_SCRIPTS
-````
+   ```
 
 2. **Create virtual environment**
 
@@ -80,7 +82,7 @@ python train.py --data yolo_params.yaml --epochs 50 --img 640 --batch 16 --weigh
 
 ## 🔍 Inference (Predictions)
 
-To run predictions on new images/videos:
+To run predictions on new images/videos using the command line:
 
 ```bash
 python predict.py --weights runs/train/exp/weights/best.pt --source data/test/images
@@ -97,6 +99,20 @@ To visualize bounding boxes and detection results:
 ```bash
 python visualize.py --input predictions/ --show
 ```
+
+---
+
+## 🌐 Streamlit App for Predictions
+
+To run the Streamlit app for making predictions through a user-friendly interface:
+
+1. Run the app with:
+
+   ```bash
+   streamlit run app.py
+   ```
+
+2. The app will open in your browser, allowing you to upload images or videos for object detection using the trained model.
 
 ---
 
